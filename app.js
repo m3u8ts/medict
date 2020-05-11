@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const megajs = require('megajs');
+const filetype = require('file-type');
 const port = process.env.PORT || 3000;
 
 const app = express();
@@ -21,8 +22,16 @@ app.get('/direct/:link', (req, res) => {
             returnCiphertext: false
         }, (err, data) => {
             if (err) throw err
-            res.type(file.name);
-            res.send(data);
+            res.set({
+                'Cache-Control': 'public, max-age=157784760, s-maxage=157784760',
+                'Accept-Charset': 'utf-8'
+            });
+            (async () => {
+                let ft = await filetype.fromBuffer(data);
+                res.type(ft.mime);
+                res.send(data);
+            })();
+            
         });
     });
 });
