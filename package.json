@@ -1,0 +1,19 @@
+{
+  "name": "mega",
+  "version": "1.0.0",
+  "description": "Mega helper api",
+  "main": "app.js",
+  "repository": "https://github.com/infinity-geek/mega",
+  "author": "infinity-geek <infinity.geek@yandex.ru>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "megajs": "^0.17.0",
+    "mime-types": "^2.1.27"
+  },
+  "scripts": {
+    "prod": "PORT=80 node app",
+    "dev": "PORT=3000 node app"
+  }
+}
