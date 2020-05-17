@@ -4,7 +4,8 @@ Mega direct links
 
 ## How to use
 1. Go to [mega.nz](https://mega.nz)
-1. Copy full link eg ![link template](https://mega.infinity-geek.xyz/direct/https%3A%2F%2Fmega.nz%2Ffile%2FrBw1lIJC%23OLems9128dBR5JH0MRp6VNQII07sZgAXbG7KNRN2qas "This file inclided using this app :)")
+1. Copy full link eg
+![link template](https://mega.infinity-geek.xyz/direct/https%3A%2F%2Fmega.nz%2Ffile%2FrBw1lIJC%23OLems9128dBR5JH0MRp6VNQII07sZgAXbG7KNRN2qas "This file inclided using this app :)")
 1. Go to [mega.infinity-geek.xyz](https://mega.infinity-geek.xyz/)
 1. Paste link, generate direct and use this
 
