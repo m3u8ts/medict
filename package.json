@@ -1,30 +1,24 @@
 {
-  "name": "mega",
-  "version": "1.0.0",
+  "name": "medict",
+  "version": "1.1.0",
   "description": "Mega direct links",
-  "main": "app.js",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "express": "^4.17.1",
     "file-type": "^14.3.0",
     "megajs": "^0.17.0"
   },
-    "author": {
-    "name" : "Stanislav Smirnov",
-    "email" : "infinity.geek@yandex.ru",
-    "url" : "https://infinity-geek.xyz"
+  "author": {
+    "name": "Stanislav Smirnov",
+    "email": "stanislav@laont.me",
+    "url": "https://laont.me"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/infinity-geek/mega.git"
+    "type": "git",
+    "url": "https://github.com/medict/medict.git"
   },
   "bugs": {
-    "url" : "https://github.com/infinity-geek/mega/issues",
-    "email" : "infinity.geek@yandex.ru"
-  },
-  "scripts": {
-    "prod": "PORT=80 node app",
-    "dev": "PORT=3000 node app"
+    "url": "https://github.com/medict/medict/issues",
+    "email": "stanislav@laont.me"
   }
 }
