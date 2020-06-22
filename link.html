@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta charset='UTF-8'>
+        <title>Medict</title>
     </head>
     <body>
-        <input type="url" id="link" oninput="genLink(this.value)">
+        <input type='url' id='link' oninput='genLink(this.value)'>
         <p id="ready-link">Тут будет ваша ссылка</p>
         <script>
             function genLink(link) {
-                let api = 'https://mega.infinity-geek.xyz/direct/'
+                let api = 'https://mega.laont.me/api/direct/?link='
                 let url = api + encodeURIComponent(link);
                 document.getElementById('ready-link').innerText = url;
             }
