@@ -2,7 +2,7 @@ const megajs = require('megajs');
 const filetype = require('file-type');
 
 module.exports = async (req, res) => {
-  let link = decodeURIComponent(req.params.link);
+  let link = decodeURIComponent(req.query.link);
   let file = megajs.file(link);
   const options = {
     maxConnections: 10,
