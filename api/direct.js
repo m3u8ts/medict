@@ -13,11 +13,10 @@ module.exports = async (req, res) => {
     returnCiphertext: false
   };
 
-  file.loadAttributes((err, file) => {
+  file.loadAttributes(async (err, file) => {
     file.download(options, (err, data) => {
       res.write(data);
-      let ft = await fileType.fromBuffer(data);
-      res.setHeader('Conent-Type', ft);
+      res.setHeader('Conent-Type', await fileType.fromBuffer(data));
       res.end();
     });
   });
