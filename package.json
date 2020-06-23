@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "megajs": "^0.17.0",
-    "mime": "^2.4.6"
+    "file-type": "^14.6.2",
+    "megajs": "^0.17.0"
   },
   "author": {
     "name": "Stanislav Smirnov",

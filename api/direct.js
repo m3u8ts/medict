@@ -1,5 +1,6 @@
+const { promisify } = require('util');
 const megajs = require('megajs');
-const mime = require('mime');
+const fileType = require('file-type');
 
 module.exports = async (req, res) => {
   let link = decodeURIComponent(req.query.link);
@@ -13,13 +14,11 @@ module.exports = async (req, res) => {
   };
 
   file.loadAttributes((err, file) => {
-    async file.download(options).pipe(res.write())
-    .then {
-      res.setHeader('Conent-Type', mime.type(file.name));
+    file.download(options, (err, data) => {
+      res.write(data);
+      let ft = async fromBuffer(data);
+      res.setHeader('Conent-Type', await fileType.fromBuffer(data));
       res.end();
-    }
-    .catch (err) {
-      console.log(err);
-    };
+    });
   });
-}
+};
