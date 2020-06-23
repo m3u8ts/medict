@@ -1,5 +1,4 @@
 # medict
-Mega direct links
 > Convert [mega.nz](https://mega.nz) public links to direct links
 
 ## How to use
