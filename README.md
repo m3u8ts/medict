@@ -11,15 +11,15 @@ Mega direct links
 
 ## Project tree
 ```
-├── node_modules  Directory with nodejs dependencies
-├── assets        Directory with assets like logo   
-├── LICENSE.md    License file (MIT)
-├── README.md     Readme file
-├── link.html     HTML with link generation
-├── package.json  Module config
-├── vercel.json   Deploy config
-└── api           Serverless functions
-    └── direct.js Main file 
+├── node_modules   Node dependencies
+├── assets         Assets like logo   
+├── LICENSE.md     License file (MIT)
+├── README.md      Readme
+├── link.html      Link generation
+├── package.json   Module config
+├── vercel.json    Deploy config
+└── api            Serverless functions
+    └── direct.js  Main function 
 ```
 
 ## License
