@@ -1,5 +1,5 @@
 const megajs = require('megajs');
-const filetype = require('file-type');
+const mime = require('mime');
 
 module.exports = async (req, res) => {
   let link = decodeURIComponent(req.query.link);
@@ -10,13 +10,16 @@ module.exports = async (req, res) => {
     chunkSizeIncrement: 64000,
     maxChunkSize: 1000000,
     returnCiphertext: false
-  }
+  };
 
   file.loadAttributes((err, file) => {
-    file.download(options, async (err, data) => {
-      //let ft = await filetype.fromBuffer(data);
-      //res.setHeader('Content-Type', ft.mime);
-      res.send(data);
-    });
+    async file.download(options).pipe(res.write())
+    .then {
+      res.setHeader('Conent-Type', mime.type(file.name));
+      res.end();
+    }
+    .catch (err) {
+      console.log(err);
+    };
   });
 }
