@@ -5,7 +5,7 @@ Mega direct links
 ## How to use
 1. Go to [mega.nz](https://mega.nz)
 1. Copy full link of **public** file. Template below
-1. Go to [medict.laont.me/](https://medict.laont.me/)
+1. Go to [medict.laont.me](https://medict.laont.me/)
 1. Paste link, generate direct and use this
 > ![link template](https://medict.laont.me/api/direct/?link=https%3A%2F%2Fmega.nz%2Ffile%2FrBw1lIJC%23OLems9128dBR5JH0MRp6VNQII07sZgAXbG7KNRN2qas "This file inclided using this app :)")
 
