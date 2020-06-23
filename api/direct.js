@@ -16,7 +16,6 @@ module.exports = async (req, res) => {
   file.loadAttributes((err, file) => {
     file.download(options, (err, data) => {
       res.write(data);
-      let ft = async fromBuffer(data);
       res.setHeader('Conent-Type', await fileType.fromBuffer(data));
       res.end();
     });
