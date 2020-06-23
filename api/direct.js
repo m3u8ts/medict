@@ -13,8 +13,8 @@ module.exports = async (req, res) => {
     returnCiphertext: false
   };
 
-  file.loadAttributes(async (err, file) => {
-    file.download(options, (err, data) => {
+  file.loadAttributes((err, file) => {
+    file.download(options, async (err, data) => {
       res.write(data);
       await res.setHeader('Conent-Type', fileType.fromBuffer(data));
       res.end();
