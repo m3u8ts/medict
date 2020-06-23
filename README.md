@@ -1,6 +1,6 @@
 # medict
 Mega direct links
-> If you use mega.nz, then you can get direct links to your public files
+> Convert [mega.nz](https://mega.nz) public links to direct links
 
 ## How to use
 1. Go to [mega.nz](https://mega.nz)
