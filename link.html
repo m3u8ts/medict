@@ -9,7 +9,7 @@
     <p id="ready-link">Тут будет ваша ссылка</p>
     <script>
       function genLink(link) {
-        let api = 'https://medict.laont.me/api/direct/?link='
+        let api = 'https://medict.vercel.app/api/direct/?link='
         let url = api + encodeURIComponent(link);
         document.getElementById('ready-link').innerText = url;
       }
